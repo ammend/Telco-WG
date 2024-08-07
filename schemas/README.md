@@ -71,7 +71,7 @@ internal $ python3 json_schema_compare.py -f spdx-v2.3-fix-schema.json spdx-v2.2
     }
 }
 ```
-SPDX 2.3 add four fields that are all not mandatory in comparison with SPDX 2.2 and require less license info mandatory fields. This means if it meets SPDX 2.3, it will meet SPDX 2.2. So we choose SPDX 2.3 as a base implementation of Telco Guide. Then we add `MUST` feild in Telco Guide which can be shown below.
+SPDX 2.3 add four fields that are all not mandatory in comparison with SPDX 2.2 and require less license info mandatory fields. This means if it meets SPDX 2.2, it will meet SPDX 2.3. So we choose SPDX 2.3 as a base implementation of Telco Guide. Then we add `MUST` feild in Telco Guide which can be shown below.
 ```
 internal $ python3 json_schema_compare.py -f ../openchain-telco-guide-v1.0-schema.json spdx-v2.3-fix-schema.json 
 {
